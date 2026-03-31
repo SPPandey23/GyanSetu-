@@ -52,6 +52,13 @@ graph TD
 ```
 
 ---
+## Query and Verification Report
+![GyanSetu](assets/Query_demo.png)
+
+![GyanSetu](assets/Verification_report.png)
+
+---
+
 
 ##  Technology Stack
 
