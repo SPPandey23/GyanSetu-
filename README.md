@@ -56,7 +56,7 @@ graph TD
 ![GyanSetu](assets/Query_demo.png)
 
 
-![GyanSetu](assets/Verification_report.png)
+![GyanSetu](assets/verification_report.png)
 
 ---
 
