@@ -1,5 +1,5 @@
 # GyanSetu 
-
+![GyanSetu](assets/landing_page.png)
 
 **GyanSetu** is an advanced, fully autonomous **Retrieval-Augmented Generation (RAG)** system designed to intelligently query and interact with your documents. Powered by large language models (via Groq/Llama), semantic vector search (ChromaDB), and a multi-agent orchestrated workflow (LangGraph), GyanSetu goes beyond simple similarity search. It introduces self-verification, relevance checking, and dynamic answer refinement to ensure highly accurate, hallucination-free responses.
 
