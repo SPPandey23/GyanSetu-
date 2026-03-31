@@ -1,40 +1,36 @@
-# GyanSetu (Doc Cortex) 🧠📚
+# GyanSetu 
 
-![GyanSetu Banner](https://img.shields.io/badge/Status-Active-success)
-![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue)
-![LangGraph](https://img.shields.io/badge/Framework-LangGraph-orange)
-![Streamlit](https://img.shields.io/badge/UI-Streamlit-red)
 
 **GyanSetu** is an advanced, fully autonomous **Retrieval-Augmented Generation (RAG)** system designed to intelligently query and interact with your documents. Powered by large language models (via Groq/Llama), semantic vector search (ChromaDB), and a multi-agent orchestrated workflow (LangGraph), GyanSetu goes beyond simple similarity search. It introduces self-verification, relevance checking, and dynamic answer refinement to ensure highly accurate, hallucination-free responses.
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
-### 1. 🤖 Agentic QA Pipeline (Self-Reflective RAG)
+### 1.  Agentic QA Pipeline (Self-Reflective RAG)
 Instead of a simple "retrieve-and-generate" approach, GyanSetu orchestrates a multi-step agent workflow:
 - **Relevance Checker:** Instantly filters out questions entirely unrelated to the uploaded context, saving tokens and computing time.
 - **Research Agent:** Synthesizes the retrieved context and formulates a comprehensive draft answer.
 - **Verification Agent (Critic):** Automatically critiques the draft answer against the retrieved context to ensure no hallucinations occurred.
 - **Self-Healing Loop:** If the verification agent flags the answer as unsupported or irrelevant, the system routes the task back to the research agent for corrections, ensuring maximum fidelity.
 
-### 2. 🔍 Advanced Hybrid Retrieval
+### 2.  Advanced Hybrid Retrieval
 Combines the best of two search paradigms:
 - **Dense Retrieval (Semantic Search):** Uses HuggingFace `BAAI/bge-base-en-v1.5` embeddings and **ChromaDB** to understand the contextual meaning of queries.
 - **Sparse Retrieval (Keyword Search):** Uses **BM25** to catch exact keyword matches (vital for jargon, names, and acronyms).
 - **Ensemble Retriever:** Weighted combination (default 60% semantic, 40% keyword) to yield the most contextually relevant chunks.
 
-### 3. 📄 Intelligent Document Processing
+### 3.  Intelligent Document Processing
 - **Robust OCR & Parsing:** Leverages **Docling** to accurately process complex PDFs and Word documents, preserving structure and layout.
 - **Semantic Chunking:** Converts documents to Markdown and splits them based on Markdown Headers (`#`, `##`), maintaining the hierarchical integrity and logical flow of the text rather than blindly chopping paragraphs mid-sentence.
 
-### 4. ⚡ Smart Caching System
+### 4.  Smart Caching System
 - Implements a hashlib-based caching mechanism. Before running expensive OCR or conversions, the system hashes the file.
 - If a document has already been processed within the expiration window (7 days), the system instantly loads chunks from a local serialized `.pkl` cache—drastically speeding up app reloads and repetitive document uploads.
 
 ---
 
-## 🛠️ Architecture Overview
+##  Architecture Overview
 
 ```mermaid
 graph TD
@@ -57,7 +53,7 @@ graph TD
 
 ---
 
-## ⚙️ Technology Stack
+##  Technology Stack
 
 - **UI Framework:** Streamlit
 - **Agent Orchestration:** LangGraph (StateGraph)
@@ -69,10 +65,10 @@ graph TD
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```bash
-Doc Cortex/
+Gyan Setu/
 │
 ├── app.py                      # Main Streamlit application entry point
 ├── requirements.txt            # Python dependencies
@@ -104,7 +100,7 @@ Doc Cortex/
 
 ---
 
-## 🚀 Setup & Installation
+##  Setup & Installation
 
 Follow these steps to set up the project locally.
 
@@ -143,7 +139,7 @@ The application will be accessible via your browser at `http://localhost:8501`.
 
 ---
 
-## 💡 How to Use
+## How to Use
 
 1. **Upload Documents:** Navigate to the sidebar and upload your `.pdf`, `.docx`, `.md`, or `.txt` files.
 2. **Process:** Click on "Process Documents". The system will cache and chunk the files, and build the retrieval index. 
