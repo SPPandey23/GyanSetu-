@@ -1,0 +1,13 @@
+streamlit
+langchain
+langchain-groq
+langchain-chroma
+langchain-community
+langchain-classic
+docling
+rank-bm25
+langgraph
+pydantic-settings
+sentence-transformers
+langchain-huggingface
+chromadb
