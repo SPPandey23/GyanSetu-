@@ -11,3 +11,4 @@ pydantic-settings
 sentence-transformers
 langchain-huggingface
 chromadb
+loguru
