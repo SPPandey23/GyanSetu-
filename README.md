@@ -115,7 +115,7 @@ Follow these steps to set up the project locally.
 ### 1. Clone the repository
 ```bash
 git clone <repository_url>
-cd "Doc Cortex"
+cd "GyanSetu"
 ```
 
 ### 2. Create and Activate Virtual Environment
