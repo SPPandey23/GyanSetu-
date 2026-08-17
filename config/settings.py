@@ -6,7 +6,7 @@ class Settings(BaseSettings):
 
     # Required
     GROQ_API_KEY: Optional[str] = "" # your api key
-    MODEL_NAME: str = "llama-3.3-70b-versatile"
+    MODEL_NAME: str = "openai/gpt-oss-120b"
 
     # File upload limits
     MAX_FILE_SIZE: int = MAX_FILE_SIZE
